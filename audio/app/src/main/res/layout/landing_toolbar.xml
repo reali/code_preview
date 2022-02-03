@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Toolbar_Top_landing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/themeYellow"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_landing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
+            android:text="audio"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_battery_level"
+            android:layout_toRightOf="@+id/toolbar_landing_title"
+            android:layout_width="@dimen/_28dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_8dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/black"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:src="@drawable/ic_battery_level_4_32dp" />
+
+        <TextView
+            android:id="@+id/tv_battery_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14font"
+            android:layout_toRightOf="@+id/iv_battery_level"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

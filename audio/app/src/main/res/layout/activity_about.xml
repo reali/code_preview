@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBlack"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/_24dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ix_change_up"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:layout_margin="@dimen/_4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/themeBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copyrights"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16font"
+                android:layout_marginTop="@dimen/_8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company_address"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16font"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginBottom="@dimen/_4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rights_reserved"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16font" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16font"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginBottom="@dimen/_8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_4dp">
+
+        <Button
+            android:id="@+id/btn_contact_us"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:layout_marginBottom="@dimen/_12dp"
+            android:background="@drawable/button_style"
+            android:text="@string/contact_us"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

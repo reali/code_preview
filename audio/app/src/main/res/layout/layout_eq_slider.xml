@@ -1,0 +1,44 @@
+<com.zitech.audio.utils.SliderLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeGray">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/_16font" />
+
+
+    <SeekBar
+        android:id="@+id/sb_slider"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:layout_gravity="center"
+        android:rotation="270"
+        android:progressBackgroundTint="@color/white"
+        android:thumbTint="@color/themeYellow"/>
+
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/_16font"/>
+
+
+</com.zitech.audio.utils.SliderLayout>

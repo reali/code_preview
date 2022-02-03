@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeBlack">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themeGray"
+        android:layout_margin="@dimen/_12dp"
+        android:checkedButton="@id/rb_language_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_english"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/english_default"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_1"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_turkish"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/thurk_dili"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_2"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_italian"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/english_default"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_3"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_swidish"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/english_default"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_4"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_philiphine"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/english_default"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_5"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_chiness"
+                app:civ_border_width=".5dp"
+                android:layout_marginEnd="@dimen/_18dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/english_default"/>
+
+            <RadioButton
+                android:id="@+id/rb_language_6"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

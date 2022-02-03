@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "227963825338",
+    "firebase_url": "https://crashanalytics-test.firebaseio.com",
+    "project_id": "crashanalytics-test",
+    "storage_bucket": "crashanalytics-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227963825338:android:79fdfe38bdcc1ab3",
+        "android_client_info": {
+          "package_name": "com.zitech.audio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227963825338-5bckuski7k561li4sh27kc2v28vg2aqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zitech.audio",
+            "certificate_hash": "5d16106d101dd79c8c0f54244ba8b07e3af98313"
+          }
+        },
+        {
+          "client_id": "227963825338-1rmhff6kgtg4lnqku4jip30oq4poqas5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJxoCudIdz15ToYFK1iKmjVMYG9AMECI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227963825338-1rmhff6kgtg4lnqku4jip30oq4poqas5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

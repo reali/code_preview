@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pa3424.app.stabs1.activities.FindMyBottleActivity"
+    tools:showIn="@layout/activity_find_my_bottle">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/last_known_location"
+        android:textColor="#043164"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/asdasd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/title"
+                android:layout_marginTop="10dp"
+                android:text="@string/_334_goddard_avenue_brookline"
+                android:textColor="#043164"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="5dp"
+                android:text="@string/ma_02445_usa"
+                android:textColor="#043164"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lastloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:text="@string/_42_312908_71_136466"
+                android:textColor="#043164" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_find" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/center_map"
+                android:textColor="#043164"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/asdasd"
+        android:layout_marginTop="10dp"
+        tools:context="com.pa3424.app.stabs1.activities.FindMyBottleActivity" />
+
+    <Button
+        android:id="@+id/btn_ring"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="#04D162"
+        android:text="@string/ring_bottle"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="start"-->
+    <!--android:id="@+id/button_start"-->
+    <!--android:layout_alignTop="@+id/map"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:onClick="start" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="stop"-->
+    <!--android:id="@+id/button_stop"-->
+    <!--android:layout_alignTop="@+id/map"-->
+    <!--android:layout_toEndOf="@+id/button_start"-->
+    <!--android:onClick="stop" />-->
+
+</RelativeLayout>

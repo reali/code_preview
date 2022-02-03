@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeBlack"
+    tools:context=".activities.Reset">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <TextView
+        android:id="@+id/tv_reset_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Toolbar_Top"
+        android:layout_margin="@dimen/_18dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/_18font"
+        android:textColor="@color/white"
+        android:text="@string/reset_note"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_reset_note"
+        android:background="@color/themeGray"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_90dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height= "@dimen/btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style"
+            android:textColor="@color/themeBlack"
+            android:textSize="@dimen/_18font"
+            android:text="Reset UA-28SE-V"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_circule_design"
+        android:layout_below="@+id/tv_reset_note"
+        android:layout_width="@dimen/_180dp"
+        android:layout_height="@dimen/_180dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circule_shape"
+        android:backgroundTint="@color/themeGray">
+
+        <ImageView
+            android:layout_width="@dimen/_164dp"
+            android:layout_height="@dimen/_164dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12dp"
+            android:backgroundTint="@color/themeBlack"
+            android:background="@drawable/circule_shape"
+            android:padding="@dimen/_24dp"
+            android:src="@drawable/ic_warning"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

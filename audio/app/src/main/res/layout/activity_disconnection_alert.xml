@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeBlack">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:padding="@dimen/_12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16font"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/never_forget_alert"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_never_forget_alert"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:enabled="false"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:thumbTint="@color/white"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16font"
+            android:layout_marginTop="@dimen/_12dp"
+            android:textAlignment="center"
+            android:text="@string/set_range"/>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_64dp"
+                    android:layout_height="@dimen/_64dp"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font"
+                    android:text="@string/mobile"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_seekbar_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:orientation="vertical" >   <!-- adjust this in java code -->
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Near" />
+                        <ImageView
+                            android:id="@+id/iv_pointer"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/pointer" />
+
+                    </LinearLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekbar_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_seekbar_design"
+                        android:max="60"
+                        android:thumbTint="@color/white"
+                        style="@style/MySeekBar"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_64dp"
+                    android:layout_height="@dimen/_64dp"
+                    android:src="@drawable/headset" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:text="@string/headset"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:padding="@dimen/_18dp"
+        android:background="@color/themeGray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_preferences"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chk_alert_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:checked="true"
+                    android:text="UA42QT-V"/>
+
+                <CheckBox
+                    android:id="@+id/chk_alert_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:text="Mobile"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chk_vibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:text="Vibration"/>
+
+                <CheckBox
+                    android:id="@+id/chk_led_flash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:checked="true"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:enabled="false"
+                    android:text="LED Flashing"/>
+
+                <CheckBox
+                    android:id="@+id/chk_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:text="Notification"/>
+
+                <CheckBox
+                    android:id="@+id/chk_ringtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:text="Ringtone"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

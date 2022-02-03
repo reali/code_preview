@@ -1,0 +1,8 @@
+<TextView
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_16font"
+    android:gravity="center"
+    android:padding="@dimen/_8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

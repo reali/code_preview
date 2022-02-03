@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBlack"
+    android:orientation="vertical"
+    tools:context=".activities.ChangePassword">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themeGray"
+        android:layout_margin="@dimen/_12dp">
+
+        <TextView
+            android:id="@+id/tv_find_headset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_24dp"
+            android:text="@string/find_the_headset"/>
+
+        <TextView
+            android:id="@+id/tv_find_headset_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_find_headset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:text="@string/find_headset_note"/>
+
+        <ImageView
+            android:id="@+id/iv_scan_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_18dp"
+            android:src="@drawable/device_pic"/>
+
+        <Button
+            android:id="@+id/btn_stop_scan"
+            android:layout_width="@dimen/et_width"
+            android:layout_height="@dimen/et_height"
+            android:layout_marginTop="@dimen/_18dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_below="@+id/iv_scan_device"
+            android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style_light"
+            android:text="@string/tap_to_find"/>
+
+        <ProgressBar
+            android:id="@+id/prograssbaar_scanning"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_stop_scan"
+            android:indeterminateDrawable="@drawable/progress_bar_shape"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/tvScanningStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14font"
+            android:fontFamily="@font/roboto"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_below="@id/btn_stop_scan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50dp"
+            android:text="Searching..."/>
+    </RelativeLayout>
+</LinearLayout>

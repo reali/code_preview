@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeBlack"
+    tools:context=".activities.WarrantyRecord">
+
+    <include android:layout="@layout/toolbar_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:orientation="vertical"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16font"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="gravity"
+            android:padding="@dimen/_18dp"
+            android:text="@string/one_year_warranty"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:background="@color/themeGray"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/roboto"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/purchase_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font"
+                android:fontFamily="@font/roboto"
+                android:text="@string/model" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_warranty_record_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:background="@color/themeGray"
+        android:layout_marginBottom="@dimen/_12dp">
+
+        <Button
+            android:id="@+id/btn_add_model"
+            android:layout_width="@dimen/et_width"
+            android:layout_height="@dimen/et_height"
+            android:layout_marginTop="@dimen/_28dp"
+            android:fontFamily="@font/roboto"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:background="@drawable/button_style"
+            android:text="@string/add_model"/>
+
+    </RelativeLayout>
+</LinearLayout>

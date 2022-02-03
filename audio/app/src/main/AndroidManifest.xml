@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zitech.audio">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".application.audioApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+
+        <activity
+            android:name=".activities.FindPhone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VoiceCommand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AutoPairingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.ManualPairingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TestMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4035d9cb2bba69654eba04124111c62d07aded11" />
+
+        <activity
+            android:name=".activities.LandingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Notifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Reset"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Language"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AppUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WarrantyRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddModel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AlertPreference"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BassBooster"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Equalizer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NeverForgetSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VoicePrompt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SearchingHeadset"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BatteryCapacity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.GAIAGATTBLEService"
+            android:exported="false" />
+        <service
+            android:name=".services.GAIABREDRService"
+            android:exported="false" />
+        <service
+            android:name=".services.MyTestService"
+            android:exported="false" />
+
+        <receiver android:name=".receivers.ShowFeaturesReceiver">
+            <intent-filter>
+                <action android:name="com.audio.FEATURES_SHOW" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.RefreshConnectionStateReceiver">
+            <intent-filter>
+                <action android:name="com.audio.REFRESH_CONNECTION_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.RefreshBatteryLevelReceiver">
+            <intent-filter>
+                <action android:name="com.audio.REFRESH_BATTERY_LEVEL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.EnableNeverForgetReceiver">
+            <intent-filter>
+                <action android:name="com.audio.ENABLE_NEVER_FORGET" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

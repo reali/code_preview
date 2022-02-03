@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dailog_style_black"
+    android:layout_margin="@dimen/_36dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_dailog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="@dimen/_12dp"
+            android:text="Digital Volume Control"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16font"
+            android:textStyle="bold" />
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/seekbar_volume"
+            android:layout_width="@dimen/_158dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_dailog"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:cs_circle_progress_color="#f2981e"
+            app:cs_circle_stroke_width="4dp"
+            app:cs_circle_style="round"
+            app:cs_max="100"
+            app:cs_negative_enabled="false"
+            app:cs_pointer_color="#fff"
+            app:cs_pointer_stroke_width="24dp"
+            app:cs_progress="30" />
+
+        <TextView
+            android:id="@+id/tv_ssekbar_progres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_minus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="-"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_plus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_body_dailog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbar_volume"
+            android:layout_alignParentBottom="false"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:layout_marginRight="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="@dimen/_12dp"
+            android:text="Not recommended to go over 70"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14font" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

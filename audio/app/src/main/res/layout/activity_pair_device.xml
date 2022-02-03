@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/themeBlack"
+    tools:context=".activities.PairDevice">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_24dp"
+        android:padding="@dimen/_24dp"
+        android:src="@drawable/logo" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_margin="@dimen/_12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:layout_marginBottom="@dimen/_4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pair_search"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_20font"
+                    android:layout_marginEnd="@dimen/_2dp"
+                    android:textColor="@color/themeYellow"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:background="@color/themeGray"
+                    android:text="@string/searched"/>
+
+                <TextView
+                    android:id="@+id/tv_pair_paired"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:layout_marginStart="@dimen/_2dp"
+                    android:textSize="@dimen/_20font"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@color/themeGray"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/paired"/>
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewflipper_pair_device"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/list_paired_devices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/themeGray" />
+
+                <TextView
+                    android:id="@+id/tv_pair_device_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:background="@color/themeGray"
+                    android:textSize="@dimen/_16font"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/connect_no_available_scanned_device"/>
+
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:background="@color/themeGray">
+
+                <Button
+                    android:id="@+id/btn_add_new_device"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
+                    android:background="@drawable/button_style"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_24dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btn_text_size"
+                    android:text="@string/connect"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

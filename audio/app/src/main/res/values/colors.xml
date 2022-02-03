@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#464646</color>
+    <color name="colorPrimaryDark">#464646</color>
+    <color name="colorAccent">#f2981e</color>
+    <color name="themeYellow">#f2981e</color>
+    <color name="themeGray">#818181</color>
+    <color name="themeBlack">#464646</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="disable">#c9c7c7</color>
+
+    <color name="brand_orange">#F7921E</color>
+    <color name="brand_red">#EE3124</color>
+    <color name="brand_grass">#9FCC3B</color>
+
+    <!-- Snack bar colors -->
+    <color name="snack_bar_information">@color/brand_grass</color>
+    <color name="snack_bar_warning">@color/brand_orange</color>
+    <color name="snack_bar_error">@color/brand_red</color>
+
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TestMainActivity">
+
+
+    <Button
+        android:id="@+id/bt_vol_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume control" />
+
+    <Button
+        android:id="@+id/bt_vol_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_vol_min"
+        android:text="Connect/Disconnect" />
+
+    <Button
+        android:id="@+id/bt_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_vol_plus"
+        android:text="Play " />
+
+    <Button
+        android:id="@+id/bt_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_play"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/bt_led1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_pause"
+        android:text="LED1" />
+
+    <Button
+        android:id="@+id/bt_led2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_led1"
+        android:text="LED2 OFF" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="OFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_status_bond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_status"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="OFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_status_bond"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="1"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_battery"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_api"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="HeartRate"-->
+            <!--android:textColor="#f00"-->
+            <!--tools:visibility="gone" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_rssi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="HeartRate"-->
+            <!--android:textColor="#f00"-->
+            <!--tools:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/tv_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="LED"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/tv_eqw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="EQUALIZER"
+            android:textColor="#f00" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_tws"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="TWS"-->
+            <!--android:textColor="#f00"-->
+            <!--tools:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/tv_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="REMOTE_CONTROL"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/tv_upg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="UPGRADE"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/tv_prox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="proximity"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/tv_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="find"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/tv_batt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="battery"
+            android:textColor="#f00" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_vibe"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="vibrator"-->
+            <!--android:textColor="#f00" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_heart"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="HeartRate"-->
+            <!--android:textColor="#f00"-->
+            <!--android:visibility="gone" />-->
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

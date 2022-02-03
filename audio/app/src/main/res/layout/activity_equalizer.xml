@@ -1,0 +1,277 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBlack"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar_title"/>
+
+    <LinearLayout
+        android:id="@+id/layout_equalizer_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/themeGray"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:padding="@dimen/_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="60Hz"/>
+
+            <include
+                android:id="@+id/seekbar_1"
+                layout="@layout/layout_eq_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"/>
+
+            <TextView
+                android:id="@+id/text_seek1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="0db"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:padding="@dimen/_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="230Hz"/>
+
+            <include
+                android:id="@+id/seekbar_2"
+                layout="@layout/layout_eq_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8" />
+
+            <TextView
+                android:id="@+id/text_seek2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="0db"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:padding="@dimen/_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="910Hz"/>
+
+            <include
+                android:id="@+id/seekbar_3"
+                layout="@layout/layout_eq_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8" />
+
+            <TextView
+                android:id="@+id/text_seek3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="0db"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:padding="@dimen/_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="3.6kHz"/>
+
+            <include
+                android:id="@+id/seekbar_4"
+                layout="@layout/layout_eq_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8" />
+
+            <TextView
+                android:id="@+id/text_seek4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="0db"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:padding="@dimen/_8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="14kHz"/>
+
+            <include
+                android:id="@+id/seekbar_5"
+                layout="@layout/layout_eq_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8" />
+
+            <TextView
+                android:id="@+id/text_seek5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:textSize="@dimen/_16font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:text="0db"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_equalizer_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/themeGray"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:paddingBottom="@dimen/_4dp">
+
+        <ListView
+            android:id="@+id/bandsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_equalizer_save"
+            android:layout_width="@dimen/_94dp"
+            android:layout_height="@dimen/_36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="@color/themeYellow"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_equalizer_vc"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_equalizer_save"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity=""
+            android:layout_marginRight="13dp"
+            android:src="@drawable/ic_volume"
+            android:tint="@color/disable" />
+    </RelativeLayout>
+</LinearLayout>

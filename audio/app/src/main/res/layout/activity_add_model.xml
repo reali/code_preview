@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBlack"
+    tools:context=".activities.AddModel">
+
+    <include android:layout="@layout/toolbar_title"/>
+
+    <LinearLayout
+        android:id="@+id/layout_device_uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_12dp"
+
+        android:layout_below="@+id/Toolbar_Top"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_8dp"
+            android:text="UUID: "/>
+
+        <TextView
+            android:id="@+id/tv_device_uuid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_8dp"
+            android:text="@string/example_uuid"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_device_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_12dp"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:layout_below="@+id/layout_device_uuid"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_8dp"
+            android:text="Model: "/>
+
+        <TextView
+            android:id="@+id/tv_device_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18font"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_8dp"
+            android:text="@string/model_1"/>
+    </LinearLayout>
+
+</RelativeLayout>
